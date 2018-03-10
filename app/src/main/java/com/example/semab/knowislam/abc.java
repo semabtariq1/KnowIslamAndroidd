@@ -5,5 +5,5 @@ package com.example.semab.knowislam;
  */
 
 public class abc {
-//Semabb
+
 }
