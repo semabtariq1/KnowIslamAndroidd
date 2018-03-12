@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.semab.knowislam.WelcomeActivity"
     android:orientation="vertical"
-    android:background="@drawable/background"
-    >
+    android:background="@drawable/background">
     <LinearLayout
         android:id="@+id/l1"
         android:layout_width="match_parent"
@@ -22,7 +21,7 @@
             android:layout_marginTop="50dp"
             android:text="Know Islam"
             android:textColor="@color/lightorange"
-            android:textSize="60sp"
+            android:textSize="40sp"
             android:textStyle="bold" />
         <TextView
             android:textColor="@color/lightorangedark"
@@ -31,7 +30,7 @@
             android:layout_gravity="center"
             android:text="CLIENTS SUBSCRIBED RIGHT NOW"
             android:textAlignment="center"
-            android:textSize="30sp"
+            android:textSize="20sp"
             android:layout_marginTop="50dp"
             />
     </LinearLayout>
