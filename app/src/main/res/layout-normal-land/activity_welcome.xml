@@ -6,19 +6,19 @@
     android:layout_height="match_parent"
     tools:context="com.example.semab.knowislam.WelcomeActivity"
     android:orientation="vertical"
-    android:background="@drawable/background">
+    android:background="@drawable/backgroundland">
 
     <LinearLayout
         android:id="@+id/l1"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="340dp"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:text="Know Islam"
             android:textColor="@color/lightorange"
             android:textSize="40sp"
@@ -28,16 +28,17 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:text="CLIENTS SUBSCRIBED RIGHT NOW"
             android:textAlignment="center"
             android:textColor="@color/lightorangedark"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
         <LinearLayout
             android:id="@+id/l2"
-            android:layout_width="match_parent"
+            android:layout_width="427dp"
             android:layout_height="146dp"
+            android:layout_marginLeft="93dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/rights"
             android:orientation="vertical">
@@ -48,9 +49,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
+
+                android:layout_marginVertical="10dp"
                 android:background="@drawable/buttonstyle"
                 android:onClick="welcomeNext"
-                android:text="SUBSCRIBE NOW"
+                android:text="Next"
                 tools:text="Next" />
 
         </LinearLayout>
