@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 
 public class WelcomeActivity extends AppCompatActivity {
-//ll
+//j
     LinearLayout l1,l2;
     Button btnsub;
     Animation uptodown,downtoup;
