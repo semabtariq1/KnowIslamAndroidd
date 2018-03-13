@@ -34,7 +34,7 @@
                 android:layout_height="match_parent"
                android:textSize="35dp"
                 android:textColor="#ffffff"
-
+android:gravity="center"
             android:text="Know Islam"
                 />
 
