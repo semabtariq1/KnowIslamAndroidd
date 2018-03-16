@@ -26,17 +26,9 @@
             app:title="Know Islam"
             app:expandedTitleMarginStart="3dp"
             app:expandedTitleMarginEnd="3dp"
-            android:background="@drawable/abc">
+            android:background="@drawable/landscapelogo">
 
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-               android:textSize="35dp"
-                android:textColor="#ffffff"
-android:gravity="center"
-            android:text="Know Islam"
-                />
 
 
 

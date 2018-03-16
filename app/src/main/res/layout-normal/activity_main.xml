@@ -7,10 +7,8 @@
     tools:context="com.example.semab.knowislam.MainActivity"
     android:background="#fcfcfc"
     android:weightSum="4"
-
     android:orientation="vertical"
     >
-
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appBar"
         android:layout_height="140dp"
@@ -28,7 +26,7 @@
             app:title="Know Islam"
             app:expandedTitleMarginStart="48dp"
             app:expandedTitleMarginEnd="64dp"
-            android:background="@drawable/abc">
+            android:background="@drawable/portraitlogo">
 
             <TextView
                 android:layout_width="match_parent"
