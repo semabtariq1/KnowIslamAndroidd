@@ -20,7 +20,9 @@ import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ListAdapter;
+import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
@@ -37,14 +39,15 @@ public class AyatActivity extends ListActivity  {
     JSONArray inbox = null;
 
     // Inbox JSON url
-    private static final String INBOX_URL = "http://192.168.1.4/knowIslam/getAyat.php";
+    //private static final String INBOX_URL = "http://192.168.1.4/knowIslam/getAyat.php";
+    private static final String INBOX_URL = "http://tekroutesolutions.com/getAyat.php";
 
     // ALL JSON node names
     private static final String TAG_MESSAGES = "myarray";
-    private static final String TAG_arabic = "arabic";
-    private static final String TAG_urdu = "urdu";
-    private static final String TAG_refernce = "refernce";
-
+    private static final String TAG_arabic = "ayat";
+    private static final String TAG_urdu = "translation";
+    private static final String TAG_refernce = "refrence";
+    public static String arabicForNextActivity = "";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -88,7 +91,7 @@ public class AyatActivity extends ListActivity  {
                     params);
 
             // Check your log cat for JSON reponse
-            Log.d("Inbox JSON: ", json.toString());
+//            Log.d("Inbox JSON: ", json.toString());
 
             try {
                 inbox = json.getJSONArray(TAG_MESSAGES);
@@ -102,24 +105,24 @@ public class AyatActivity extends ListActivity  {
                     String arabic = c.getString(TAG_arabic);
                     String urdu = c.getString(TAG_urdu);
                     String refernce = c.getString(TAG_refernce);
-                    String arabicc = "";
+                   // String arabicc = "";
                     try {
-                         arabicc = URLDecoder.decode(arabic, "utf-8");
+                         //arabicc = URLDecoder.decode(arabic, "utf-8");
+                        //arabicForNextActivity = arabic;
 
-
-                    } catch (UnsupportedEncodingException e) {
+                    } catch (Exception e) {
                         e.printStackTrace();
                     }
 
-                    if(arabicc.length() > 23){
-                        arabicc = arabicc.substring(0, 22) + "..";
+                    if(arabic.length() > 23){
+                        arabic = arabic.substring(0, 22) + "..";
                     }
                     // creating new HashMap
                     HashMap<String, String> map = new HashMap<String, String>();
 
                     // adding each child node to HashMap key => value
 
-                    map.put(TAG_arabic, arabicc);
+                    map.put(TAG_arabic, arabic);
                     map.put(TAG_urdu, urdu);
                     map.put(TAG_refernce, refernce);
 
@@ -157,5 +160,10 @@ public class AyatActivity extends ListActivity  {
 
         }
 
+    }
+
+    @Override
+    protected void onListItemClick(ListView l, View v, int position, long id) {
+        Toast.makeText(this, "Clicked", Toast.LENGTH_LONG).show();
     }
 }
