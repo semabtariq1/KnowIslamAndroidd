@@ -12,5 +12,8 @@
     <color name="black">#000</color>
     <color name="lightorange">#fdf2df</color>
     <color name="lightorangedark">#ebd6ab</color>
-
+    <color name="colorPrimaryy">#393939</color>
+    <color name="colorPrimaryDarkk">#2f2f2f</color>
+    <color name="colorAccentt">#52b7f8</color>
+    <color name="backgroundfragment">#2b2b2b</color>
 </resources>

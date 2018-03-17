@@ -16,7 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
-    </application>
 
+        <activity android:name=".AyatActivity" />
+
+        <!-- Outbox Activity -->
+        <activity android:name=".MainList" />
+
+
+        <activity android:name=".MainActivity" />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
